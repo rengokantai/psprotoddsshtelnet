@@ -28,7 +28,7 @@ sudo /usr/sbin/sshd -d -p 2020
 ######5 SSH troubleshooting
 ```
 tcpdump -n -i wlan1 tcp port 22 and host 192.168.0.1
-```'
+```
 u=route g=gateway. show flags. use
 ```
 netstat -rn
