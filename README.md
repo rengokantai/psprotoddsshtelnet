@@ -13,3 +13,15 @@ hide paraphrase: in local machine
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa #enter paraphrase
 ```
+######4 Debugging tool
+```
+ssh -v
+```
+check log
+```
+cat /var/log/auth.log | grep sshd
+```
+bind ssh to another port
+```
+sudo /usr/sbin/sshd -d -p 2020
+```
