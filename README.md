@@ -62,3 +62,33 @@ other usage
 send ayt //send argument
 send getstatus //display status
 ```
+######10 Troubleshoot Telnet
+remote m:
+```
+vim /etc/services
+```
+edit
+```
+telnet 2323
+```
+then
+```
+vim /etc/inetd.conf
+```
+or maybe
+```
+/home/ke/.telnetrc
+```
+powershell:
+```
+tlntadmn \\server cpnfig port=1234
+```
+
+test:
+```
+vim /etc/xinetd.conf
+```
+edit,add (max allowed concurrent ssession)
+```
+instances =unlimited
+```
