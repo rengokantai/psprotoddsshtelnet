@@ -45,3 +45,20 @@ refresh: remove host
 ```
 ssh-keygen -f "/home/k/.ssh/known_hosts" -R 1.2.3.4
 ```
+######8 When not to use telnet
+It may expose password.
+```
+telnet
+open -l username 1.2.3.4
+```
+######9 How
+```
+telnet
+environ list
+environ define k v
+```
+other usage
+```
+send ayt //send argument
+send getstatus //display status
+```
