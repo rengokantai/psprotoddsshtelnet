@@ -33,4 +33,15 @@ u=route g=gateway. show flags. use
 ```
 netstat -rn
 ```
-######6
+######6 COmmon SSH failure  
+in putty,Connection-> Seconds between keepalive  (enter a pos value)  
+in winscp->connection->keepalive->choose(sending of null SSH packets)  
+others:
+```
+chmod 600 id_rsa
+chmod 644 id_rsa.pub
+```
+refresh: remove host
+```
+ssh-keygen -f "/home/k/.ssh/known_hosts" -R 1.2.3.4
+```
